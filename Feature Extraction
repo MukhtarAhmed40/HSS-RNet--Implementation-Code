@@ -1,0 +1,24 @@
+Feature Extraction
+The 11 statistical features extracted from network traffic:
+
+Mean packet length
+
+Variance of packet lengths
+
+Mean inter-arrival time
+
+Variance of inter-arrival times
+
+Total bytes
+
+Total packets
+
+Cumulative flow duration
+
+Percentage of TCP SYN flags
+
+Percentage of ACK flags
+
+Entropy of packet sizes
+
+Burstiness coefficient
