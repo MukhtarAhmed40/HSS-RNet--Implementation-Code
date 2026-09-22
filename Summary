@@ -1,0 +1,21 @@
+This implementation provides:
+
+Complete HSS-RNet Architecture — Mamba backbone, BiGRU refinement, TAAG, and classification layer
+
+S-SSM Baseline — Structured state-space model with DPLR and HiPPO initialization
+
+Full Preprocessing Pipeline — Leakage-resistant imputation, normalization, and sequence construction
+
+Feature Extraction — All 11 statistical features described in the paper
+
+Training Infrastructure — Weighted cross-entropy, early stopping, gradient clipping, and learning rate scheduling
+
+Evaluation Utilities — Accuracy, precision, recall, F1, AUC, and ROC curves
+
+Cross-Dataset Transfer — Zero-shot generalization evaluation
+
+Configuration Management — YAML-based configs
+
+Unit Tests — For all major components
+
+GitHub-Ready Structure — README, setup.py, requirements.txt, and proper packaging
