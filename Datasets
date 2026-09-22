@@ -1,0 +1,11 @@
+Datasets
+
+The model has been evaluated on:
+
+CIC-DDoS2019 — High-volume DDoS attacks
+
+CIC-Darknet2020 — Encrypted darknet, Tor, VPN traffic
+
+Stratosphere IPS — Long-duration botnet/malware traces
+
+LSNM2024 — Large-scale heterogeneous attacks
