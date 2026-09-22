@@ -1,0 +1,39 @@
+# Default configuration for HSS-RNet
+model:
+  name: "hss_rnet"  # options: hss_rnet, s_ssm
+  d_model: 128
+  d_state: 256
+  d_conv: 4
+  expand: 2
+  bigru_hidden: 128
+  num_classes: 2
+  dropout: 0.3
+  use_taag: true
+  use_bigru: true
+
+data:
+  sequence_length: 30
+  stride: 30
+  num_features: 11
+  batch_size: 64
+  num_workers: 4
+  train_ratio: 0.7
+  val_ratio: 0.1
+  test_ratio: 0.2
+  pad_value: 0.0
+
+training:
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: "adam"
+  scheduler: "cosine"
+  eta_min: 0.00001
+  early_stopping_patience: 5
+  grad_clip: 1.0
+  seed: 42
+
+evaluation:
+  metrics: ["accuracy", "precision", "recall", "f1"]
+  average: "macro"
+  num_runs: 10
