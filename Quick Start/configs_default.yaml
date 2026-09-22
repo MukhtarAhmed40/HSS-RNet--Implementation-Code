@@ -1,0 +1,15 @@
+model:
+  d_model: 128        # Model dimension
+  d_state: 256        # SSM state dimension
+  bigru_hidden: 128   # BiGRU hidden dimension
+  num_classes: 2      # Number of classes
+  dropout: 0.3
+
+data:
+  sequence_length: 30  # Input sequence length
+  num_features: 11     # Number of input features
+
+training:
+  epochs: 100
+  learning_rate: 0.001
+  early_stopping_patience: 5
