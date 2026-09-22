@@ -1,0 +1,23 @@
+hss-rnet/
+├── models/              # Model implementations
+│   ├── hss_rnet.py      # Main HSS-RNet model
+│   ├── mamba_backbone.py # Selective SSM
+│   ├── structured_ssm.py # Structured SSM (S-SSM)
+│   ├── bigru_refinement.py
+│   ├── taag.py          # Traffic-Aware Adaptive Gating
+│   └── classifier.py
+├── data/                # Data processing
+│   ├── dataset.py
+│   ├── preprocessing.py
+│   └── feature_extraction.py
+├── training/            # Training utilities
+│   ├── trainer.py
+│   ├── losses.py
+│   └── metrics.py
+├── scripts/             # Executable scripts
+│   ├── train.py
+│   ├── evaluate.py
+│   └── cross_dataset_transfer.py
+├── configs/             # Configuration files
+├── utils/               # Utility functions
+└── tests/               # Unit tests
